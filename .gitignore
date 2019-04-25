@@ -1,4 +1,10 @@
 ._*
+*.log
+notebook/trainData/
+bsd100/
+set14/
+data2017/
+*.npy
 *.pyc
 .DS_Store
 *.npz
