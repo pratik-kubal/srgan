@@ -5,18 +5,18 @@ config = edict()
 config.TRAIN = edict()
 
 ## Adam
-config.TRAIN.batch_size = 4
+config.TRAIN.batch_size = 25
 config.TRAIN.lr_init = 1e-4
 config.TRAIN.beta1 = 0.9
 
 ## initialize G
-config.TRAIN.n_epoch_init = 5
+config.TRAIN.n_epoch_init = 50
     # config.TRAIN.lr_decay_init = 0.1
     # config.TRAIN.decay_every_init = int(config.TRAIN.n_epoch_init / 2)
 
 ## adversarial learning (SRGAN)
-config.TRAIN.n_epoch = 5
-config.TRAIN.lr_decay = 0.1
+config.TRAIN.n_epoch = 50
+config.TRAIN.lr_decay = 0.0000001
 config.TRAIN.decay_every = int(config.TRAIN.n_epoch / 2)
 
 ## train set location
