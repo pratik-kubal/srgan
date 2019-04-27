@@ -1,3 +1,8 @@
+*/stage/
+*/BSR/
+*/Set14/
+*.zip
+*tgz
 ._*
 *.log
 notebook/trainData/
