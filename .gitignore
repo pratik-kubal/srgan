@@ -1,4 +1,6 @@
 ._*
+notebook/devData/*
+notebook/mainDataset/
 *.log
 notebook/trainData/
 bsd100/
