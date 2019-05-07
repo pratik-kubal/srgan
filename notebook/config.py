@@ -20,13 +20,13 @@ config.TRAIN.lr_decay = 0.0000001
 config.TRAIN.decay_every = int(config.TRAIN.n_epoch / 2)
 
 ## train set location
-config.TRAIN.hr_img_path = 'devData/HR/'
-config.TRAIN.lr_img_path = 'devData/LR/'
+config.TRAIN.hr_img_path = 'mainDataset/train/HR'
+config.TRAIN.lr_img_path = 'mainDataset/train/LR'
 
 config.VALID = edict()
 ## test set location
-config.VALID.hr_img_path = 'devData/HR/'
-config.VALID.lr_img_path = 'devData/LR/'
+config.VALID.hr_img_path = 'mainDataset/dev/HR'
+config.VALID.lr_img_path = 'mainDataset/dev/LR'
 
 def log_config(filename, cfg):
     with open(filename, 'w') as f:

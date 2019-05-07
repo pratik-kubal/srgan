@@ -14,6 +14,7 @@ def get_imgs_fn(file_name, path):
     return scipy.misc.imread(path + file_name, mode='RGB')
 
 def crop_sub_imgs_fn(x, dim, is_random=True):
+    # Random over many epochs converges towards convering the whole image
     x = crop(x, wrg=dim, hrg=dim, is_random=is_random)
     x = x / (255. / 2.)
     x = x - 1.

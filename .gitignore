@@ -1,4 +1,5 @@
 ._*
+notebook/logs/
 notebook/devData/*
 notebook/mainDataset/
 *.log
